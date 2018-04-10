@@ -1,16 +1,10 @@
-
+  
 import java.util.*;
 
 /**
  * 
  */
 public class BubbleObject implements GameObject {
-
-    /**
-     * Default constructor
-     */
-    public BubbleObject() {
-    }
 
     /**
      * 
@@ -28,7 +22,8 @@ public class BubbleObject implements GameObject {
      * @param radius
      */
     public void BubbleObject(int x, int y, int radius) {
-        // TODO implement here
+          this.center = new Point(x,y); 
+          this.radius = radius; 
     }
 
     /**
@@ -36,7 +31,8 @@ public class BubbleObject implements GameObject {
      * @param radius
      */
     public void BubbleObject(Point center, int radius) {
-        // TODO implement here
+          this.center = center;  
+          this.radius = radius; 
     }
 
     /**
@@ -63,9 +59,13 @@ public class BubbleObject implements GameObject {
      * @param color 
      * @return
      */
-    public void draw(void color, void color) {
-        // TODO implement here
-        return null;
+     stroke
+    public void draw(color strokeColor, color fillColor) {
+      pushStyle(); 
+        fill(fillColor); 
+        stroke(strokeColor); 
+        ellipse(center.getX(), center.getY(), this.radius * 2 , this.radius * 2); 
+      popStyle(); 
     }
 
     /**
@@ -93,5 +93,4 @@ public class BubbleObject implements GameObject {
         // TODO implement here
         return null;
     }
-
 }
