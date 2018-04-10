@@ -11,26 +11,26 @@ public interface GameObject {
      * @param int 
      * @return
      */
-    public boolean collision(void int, void int);
+    public boolean collision(int mouseX, int mouseY);
 
     /**
      * @param GmaObject 
      * @return
      */
-    public boolean collision(void GmaObject);
+    public boolean collision(GameObject other);
 
     /**
      * @param color 
      * @param color 
      * @return
      */
-    public void draw(void color, void color);
-
+    public void draw(color fillColor, color strockColor);
+    
     /**
      * @param index  
      * @return
      */
-    public void playSoundEffect(int index );
+    public void playSoundEffect(int index);
 
     /**
      * @return
@@ -41,6 +41,6 @@ public interface GameObject {
      * @param int 
      * @return
      */
-    public void setVolume(void int);
+    public void setVolume(int volume);
 
 }
