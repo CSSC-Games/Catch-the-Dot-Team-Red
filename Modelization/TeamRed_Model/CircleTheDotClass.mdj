@@ -288,7 +288,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+draw(color, color): void",
+											"text": "+draw(): void",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2862,7 +2862,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+mode: Mode",
+											"text": "+mode",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -2917,7 +2917,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "+Game(mode: Mode)",
+											"text": "+Game(mode)",
 											"horizontalAlignment": 0,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -16344,38 +16344,6 @@
 									"isOrdered": false,
 									"isUnique": false,
 									"direction": "return"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFibCOSwN6rCEs=",
-									"_parent": {
-										"$ref": "AAAAAAFibB2z3N6S+KM="
-									},
-									"name": "color",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
-								},
-								{
-									"_type": "UMLParameter",
-									"_id": "AAAAAAFibCPlBN6umNU=",
-									"_parent": {
-										"$ref": "AAAAAAFibB2z3N6S+KM="
-									},
-									"name": "color",
-									"visibility": "public",
-									"isStatic": false,
-									"isLeaf": false,
-									"type": "",
-									"isReadOnly": false,
-									"isOrdered": false,
-									"isUnique": false,
-									"direction": "in"
 								}
 							],
 							"concurrency": "sequential",
@@ -17601,9 +17569,6 @@
 							"visibility": "public",
 							"isStatic": false,
 							"isLeaf": false,
-							"type": {
-								"$ref": "AAAAAAFig1YrnUUa/D4="
-							},
 							"isReadOnly": false,
 							"isOrdered": false,
 							"isUnique": false,
@@ -17634,9 +17599,6 @@
 									"visibility": "public",
 									"isStatic": false,
 									"isLeaf": false,
-									"type": {
-										"$ref": "AAAAAAFig1YrnUUa/D4="
-									},
 									"isReadOnly": false,
 									"isOrdered": false,
 									"isUnique": false,

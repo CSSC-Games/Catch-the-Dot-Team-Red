@@ -60,10 +60,10 @@ public class BubbleObject implements GameObject {
      * @return
      */
      stroke
-    public void draw(color strokeColor, color fillColor) {
+    public void draw() {
       pushStyle(); 
-        fill(fillColor); 
-        stroke(strokeColor); 
+        fill(255); 
+        stroke(255); 
         ellipse(center.getX(), center.getY(), this.radius * 2 , this.radius * 2); 
       popStyle(); 
     }
