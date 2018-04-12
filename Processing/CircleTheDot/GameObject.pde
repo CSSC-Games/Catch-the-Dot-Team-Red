@@ -24,7 +24,7 @@ public interface GameObject {
      * @param color 
      * @return
      */
-    public void draw(color fillColor, color strockColor);
+    public void draw();
     
     /**
      * @param index  

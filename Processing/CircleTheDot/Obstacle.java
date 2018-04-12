@@ -17,16 +17,28 @@ public class Obstacle extends Neutral {
      * @param y 
      * @param radus
      */
-    public void Obstacle(int x, int y, int radus) {
-        // TODO implement here
+    public void Obstacle(int x, int y, int radius) {
+      super(x, y, radius); 
+      this.state  = ButtonState.Pressed;  
     }
 
-    /**
+   /**
      * @param position 
      * @param radius
      */
     public void Obstacle(Point position, int radius) {
-        // TODO implement here
+      super(position.getX(), position.getY(), radius); 
+      this.state  = ButtonState.Pressed; 
+    }
+
+
+    public void draw()
+    {
+      pushStyle(); 
+        fill(config.ObstacleFillColor); 
+        stroke(config.ObstacleStrokeColor); 
+        ellipse(center.getX(), center.getY(), this.radius * 2 , this.radius * 2); 
+      popStyle();  
     }
 
 }

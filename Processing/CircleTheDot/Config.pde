@@ -18,10 +18,9 @@ public final class Config {
   public static int final buttonMarginTop = 20; 
   public static int final buttonMarginLeft= 0; 
 
-
-
-
-
-
-
+  public static int final NeutralStrokeColor = 255; 
+  public static int final NeutralFillColor = 255; 
+  public static int final ObstacleStrokeColor = 255; // TODO modif
+  public static int final ObstacleFillColor = 255; // TODO modif
+  
 }
